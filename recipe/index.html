@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recipes.css">
+    <link rel="stylesheet" href="recipes.mjs">
+    <script src="main.js"></script>
+    <title>Cait's Recipe Book</title>
+</head>
+<body>
+    <header>
+        <img src="images/recipe-book.png" alt="recipe book logo">
+        <h1>Find a Recipe!</h1>
+        <!--Remember to add button. add in css/js? do i need to make a button?-->
+        <div id="searchbox">
+            <input type="text" placeholder="Find a recipe">
+            <button id="searchbutton"></button>
+        </div>
+    </header>
+    <main>
+        <div class="recipe-cards">
+            <img src="./images/sweet-potato-waffle-md.jpg" alt="Savory waffles made with Sweet potato with a hint of Ginger">
+            <!--title of recipe-->
+            <h3>Sweet Potato Waffles</h3>
+            <!--description of recipe-->
+            <p>Savory waffles made with Sweet potato with a hint of Ginger</p>
+            <!--tags-->
+            <ul class="tags"></ul>
+            <li>Waffles</li>
+            <li>Savory</li>
+            <li>Sides</li>
+            <span
+	            class="rating"
+	            role="img"
+	            aria-label="Rating: 4 out of 5 stars"
+            >
+	            <span aria-hidden="true" class="icon-star">⭐</span>
+	            <span aria-hidden="true" class="icon-star">⭐</span>
+	            <span aria-hidden="true" class="icon-star">⭐</span>
+	            <span aria-hidden="true" class="icon-star-empty">⭐</span>
+	            <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
+        </div>
+        <div class="recipe-cards" id="chicken_with_cream">
+            <img src="./images/escalopes-de-poulet-a-la-creme.webp" alt="chicken with cream and green beans">
+            <!--title of recipe-->
+            <h3>Escalope de Poulet a la Creme with steamed green beans (Chicken with Cream)</h3>
+            <!--description of recipe-->
+            <p>Delicious quick and easy creamy rice dish. The mustard, mushrooms, and lemon all blend together wonderfully</p>
+            <!--tags-->
+            <ul class="tags"></ul>
+            <li>Chicken</li>
+            <li>Entree</li>
+            <span
+	            class="rating"
+	            role="img"
+	            aria-label="Rating: 4.5 out of 5 stars"
+            >
+	            <span aria-hidden="true" class="icon-star">⭐</span>
+	            <span aria-hidden="true" class="icon-star">⭐</span>
+	            <span aria-hidden="true" class="icon-star">⭐</span>
+	            <span aria-hidden="true" class="icon-star-empty">⭐</span>
+	            <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
+        </div>
+    </main>
+    <footer>
+        <!-- icon attribution for flaticon-->
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+        <div class="social">
+	<!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+	<a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+	<a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+	<a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+</div>
+    </footer>
+</body>
+</html>

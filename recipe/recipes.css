@@ -1,0 +1,17 @@
+
+header img{
+    max-width: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.social {
+   width: auto;
+   height: auto;
+   flex-direction: row;
+   justify-content: flex-end;
+}
