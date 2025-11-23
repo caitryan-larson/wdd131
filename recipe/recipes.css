@@ -1,17 +1,49 @@
 
-header img{
-    max-width: 50px;
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
-
+header img{
+    max-width: 80px;
+}
+.recipe-cards{
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.recipe-cards img{
+    width: 35%;
+    height: auto;
+}
+.recipe-cards h3{
+    margin: 0;
+}
+.recipe-cards p{
+    order: 3;
+}
+li{
+    padding: 1rem;
+    border: 1px solid black;
+}
 footer{
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
     
 }
+/* I cannot figure out how to make the social icons go into a row */
 .social {
    width: auto;
    height: auto;
    flex-direction: row;
    justify-content: flex-end;
+   width: 30px;
+   height: 30px;
+   
 }
