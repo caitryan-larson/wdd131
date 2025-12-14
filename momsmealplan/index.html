@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mom's Meal Plan | Meal Generator</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="mainplan.js" defer></script>
+</head>
+<body>
+    <header>
+            <img src="images/mom-meal-plan-logo.png" alt="Mom's Meal Plan logo of a pink chef hat, whisk, and sparkles">
+        <div class="header-content">
+        <h1>Mom's Meal Plan</h1>
+        <p>Meal planning doesn't need to be a pain! Select a meal and add it to your weekly plan.</p>
+        </div>
+    </header>
+
+     <!-- ===== MEAL PLAN TABLE ===== -->
+    <section class="plan-section">
+        <div class="table-heading">
+            <h2>Your Weekly Plan</h2>
+        </div>  
+
+    <table>
+        <div>
+            <tr>
+                <th>Day</th>
+                <th>Meal</th>
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <td>Monday</td>
+                <td id="day-0">Empty</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td id="day-1">Empty</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td id="day-2">Empty</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td id="day-3">Empty</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td id="day-4">Empty</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td id="day-5">Empty</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td id="day-6">Empty</td>
+            </tr>
+        </div>
+    </table>
+    </section>
+    <!-- ===== MEAL CARDS ===== -->
+    <section>
+        <h2 id="meal-card-heading">Choose a Meal</h2>
+    <div class="meal-grid">
+        <div class="meal-card">
+            <img src="images/chicken-and-rice.jpg" alt="Crispy chicken tenders in a bowl with white rice and lettuce.">
+            <h3 class="meal-name">Chicken &amp; Rice</h3>
+            <p class="meal-ingredients">
+            Ingredients: Chicken, panko crumbs, rice, salt, pepper, garlic salt.
+            </p>
+            <p class="meal-instructions">
+            Instructions: Cook rice to desired texture. Mix seasonings into panko crumbs 
+            and bread chicken. Fry until 165F internal or bake at 400F for 25 minutes.
+            </p>
+        </div>
+
+        <div class="meal-card">
+            <img src="images/spaghetti.jpg" alt="Spaghetti with two pieces of garlic bread and a tomato.">
+            <h3 class="meal-name">Spaghetti</h3>
+            <p class="meal-ingredients">
+            Ingredients: Spaghetti noodles, marinara sauce, and beef.
+            </p>
+            <p class="meal-instructions">
+            Instructions: Boil spaghetti until tender while browning beef in 
+            a seperate pan. Drain grease and add marinara.
+            Drain noodles and serve with beef mixture.
+            </p>
+        </div>
+
+        <div class="meal-card">
+            <img src="images/tacos.jpg" alt="Three tacos with sour cream, shrimp, beef, cheese, and garnish.">
+            <h3 class="meal-name">Tacos</h3>
+            <p class="meal-ingredients">
+                Ingredients: Ground beef, taco seasoning, tortillas, lettuce, cheese, salsa.
+            </p>
+            <p class="meal-instructions">
+                Instructions: Brown beef and drain grease.
+                Add taco seasoning and water, and let simmer.
+                Serve with desired toppings.
+            </p>
+        </div>
+
+        <div class="meal-card">
+            <img src="images/fajitas.jpg" alt="Bell peppers, chicken, and onions in a skillet for fajitas.">
+            <h3 class="meal-name">Fajitas</h3>
+            <p class="meal-ingredients">
+                Ingredients: Tortillas, bell peppers, onions, chicken, steak, cheese,
+                sour cream and guac.
+            </p>
+            <p class="meal-instructions">
+                Instructions: Cut peppers, onions, steak and chicken
+                into strips and cook in a skillet with desired seasonings.
+                Serve in tortillas with desired toppings.
+            </p>
+        </div>
+        <div class="meal-card">
+            <img src="images/tatertotcasserole.jpg" alt="Cheesy beef and tatertot casserole.">
+            <h3 class="meal-name">Tatertot Casserole</h3>
+            <p class="meal-ingredients">
+                Ingredients: Tatertots, ground beef, sour cream, cheddar cheese,
+                cream of mushroom soup.
+            </p>
+            <p class="meal-instructions">
+                Instructions: Brown ground beef and drain the grease.
+                Add sour cream and cream of mushroom soup to beef.
+                Layer cheese and tatertots on top of beef mixture in a 9x9 pan. 
+                Bake at 375F for 30 minutes.
+            </p>
+        </div>
+        <div class="meal-card">
+            <img src="images/burger.jpg" alt="Big cheese burger with lettuce, tomato, bacon, onions, pickles, and ketchup on a sesame bun.">
+            <h3 class="meal-name">Cheeseburgers</h3>
+            <p class="meal-ingredients">
+                Ingredients: Ground beef, burger buns, and cheese.
+            </p>
+            <p class="meal-instructions">
+                Instructions: Mold beed into patty shape and brown until desired doneness. 
+                Flip to other side and place cheese on top to melt.
+                Place on bun and add desired toppings.
+            </p>
+        </div>
+        <div class="meal-card">
+            <img src="images/pizza.jpg" alt="Large pepperoni pizza with tomato slices and bell peppers.">
+            <h3 class="meal-name">Pizza</h3>
+            <p class="meal-ingredients">
+                Ingredients: Pizza dough, cheese, marinara, and pepperoni.
+            </p>
+            <p class="meal-instructions">
+                Instructions: Stretch dough to desired size.
+                Spread marinara evenly across the the top of the dough and cover with cheese.
+                Add pepperoni and desired toppings to the pizza.
+                Bake at 375F for 30 minutes.
+            </p>
+        </div>
+        <div class="meal-card">
+            <img src="images/quesadilla.jpg" alt="Crispy quesadilla with steak, cut into quarters.">
+            <h3 class="meal-name">Steak Quesadilla</h3>
+            <p class="meal-ingredients">
+                Ingredients: Flank stake, jack cheese, flour tortillas, and butter.
+            </p>
+            <p class="meal-instructions">
+                Instructions: Sear steak to desired doneness.
+                Butter one side of each tortilla and sandwich cheese and steak inbetween with butter sides on the outside.
+                Let each side cook for several minutes.
+            </p>
+        </div>
+        <div class="meal-card">
+            <img src="images/beefandcabbage.jpg" alt="large skillet with beef and cabbage.">
+            <h3 class="meal-name">Beef &amp; Cabbage</h3>
+            <p class="meal-ingredients">
+                Ingredients: Ground beef, cabbage, salt, pepper, garlic salt, and mayploy.
+            </p>
+            <p class="meal-instructions">
+                Instructions: Brown ground beef and drain the grease.
+                Add cabbage and cook until it's soft. 
+                Serve with mayploy.
+            </p>
+        </div>
+        <div class="meal-card">
+            <img src="images/butternutsoup.jpg" alt="Large bowl of orang butternut squash soup with crea and garnish.">
+            <h3 class="meal-name">Butternut Squash Soup</h3>
+            <p class="meal-ingredients">
+                Ingredients: Butternut squash, heavy cream, vegetable broth, olive oil.
+            </p>
+            <p class="meal-instructions">
+                Instructions: Roast squash at 400F for 30 minutes. 
+                Blend roasted squash with broth, oil, and cream.
+                top with more cream and seasonings.
+            </p>
+        </div>
+        <div class="meal-card">
+            <img src="images/kebob.jpg" alt="Several kebobs with chicken, steak, and vegetables.">
+            <h3 class="meal-name">Kebobs</h3>
+            <p class="meal-ingredients">
+                Ingredients: Chicken, steak, and various vegetables.
+            </p>
+            <p class="meal-instructions">
+                Instructions: Layer raw chicken, steak, and vegetables of your choice
+                onto a scewer. Season how you like and cook on grill.
+            </p>
+        </div>
+        <div class="meal-card">
+            <img src="images/frenchtoast.jpg" alt="Stack of french toast with blueberries, butter and syrup.">
+            <h3 class="meal-name">French Toast</h3>
+            <p class="meal-ingredients">
+                Ingredients: Sandwich bread, egg, milk, cinnimon, syrup, whipped cream, and berries.
+            </p>
+            <p class="meal-instructions">
+                Instructions: Mix eggs, milk, and cinnimon in a container.
+                Dip a piece of bread in the mixure, coving both sides.
+                Place on griddle until cooked. 
+                Top with butter, whipped cream, and berries.
+            </p>
+        </div>
+    </section>
+ 
+
+  <!-- modal-->
+    <div id="modal" class="modal">
+    <div class="modal-content">
+        <h2 id="modal-meal-name">Meal Name</h2>
+        <p id="modal-ingredients">Ingredients go here.</p>
+        <p id="modal-instructions">Instructions go here.</p>
+    <div class="modal-buttons">
+        <button id="addToPlanBtn">Add to meal plan</button>
+        <button id="closeModalBtn">Close</button>
+    </div>
+    </div>
+    
+
+</body>
+</html>

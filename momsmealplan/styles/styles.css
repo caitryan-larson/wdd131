@@ -1,0 +1,173 @@
+
+/*fonts*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Lora");
+
+/* basic page desgin */
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: lora;
+    background-color: white;
+    color: rgb(59, 59, 59);
+    padding: 1rem;
+    background-color: #fbf2ea;
+}
+header {
+    display: flex;
+    gap: 3rem;
+    border-bottom: 5px solid #820263;
+    
+}
+.header-content {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+header img {
+    width: 15%;
+    height: 15%;
+    padding-left: 4rem;
+}
+
+header h1, section h2 {
+    margin-bottom: 0.5rem;
+    font-family: montserrat;
+    color:#D90368;
+}
+.table-heading, #meal-card-heading{
+    padding-left: 5%;
+}
+
+/* meal plan table */
+.plan-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plan-section .table-heading {
+    align-self: flex-start;
+    padding-left: 5%;
+}
+.plan-section table {
+    width: 50%;
+    background: #fbf2ea;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 5px #820263;
+    align-items: center;
+}
+
+.plan-section th, .plan-section td {
+    padding: .5rem;
+    border: 4px solid #D90368;
+}
+
+.plan-section th {
+    text-align: left;
+    background: #99B2DD;
+}
+
+
+/* meal cards */
+.meal-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0 2rem;
+    justify-content: center;
+}
+
+.meal-card {
+    background: #D90368;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 5px #820263;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    width:30%;
+    aspect-ratio: 1/1;
+    
+}
+.meal-card img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.meal-card:hover {
+    box-shadow: 0 4px 10px #820263;
+}
+
+.meal-card h3 {
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.meal-card p {
+    font-size: 0.9rem;
+    color: rgb(22, 22, 22);
+}
+
+.meal-ingredients, .meal-instructions {
+    display: none;
+}
+
+/* modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    background: #fbf2ea;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 14px #820263;
+    z-index: 11;
+}
+
+.modal-content h2 {
+    margin-bottom: 1rem;
+    color:#820263
+}
+
+.modal-content p {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.modal-buttons button {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+#addToPlanBtn {
+    background: #D90368;
+    color: white;
+}
+
+#closeModalBtn {
+    background: #820263;
+    color: white
+}
